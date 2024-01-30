@@ -1,4 +1,4 @@
-6ed360bc94690ee0ae8cff9db960a3a7 *DESCRIPTION
+5ec5a1ffe371f483651eadaed5d520b2 *DESCRIPTION
 7e3f5989e71f0a3698f3002e7159ebed *LICENSE
 a8b18057c669d85b2b2b3cd4802b1dd6 *NAMESPACE
 ca71064c02566607b9a44b99694613e1 *R/data.R
@@ -6,7 +6,7 @@ ca71064c02566607b9a44b99694613e1 *R/data.R
 c1844a0395e990f2c2803daed4d61e64 *R/globals.R
 69807733a19b0515a2febdc170ca3429 *R/linComb.R
 c36b8a886140f59bc9c899d205302574 *R/mathComb.R
-5864721274b6005efda7cd824dbf71db *R/mlComb.R
+b7e3535599def0ec0d5eb09e97a93471 *R/mlComb.R
 97247152446a484f5b4e23004d1637b4 *R/nonlinComb.R
 2d2ade6e9296c1785811089b503b9c59 *R/plotComb.R
 976f3080dd8abc56c353b9b51405575c *R/predict.dtComb.R
@@ -21,7 +21,7 @@ d86694958306984e46a0d3053bf860da *README.md
 528f5bae4a16f0235d6af1bd46e6ae2d *data/exampleData3.rda
 aaa7d8a1a2814fd808a3f5775b999376 *inst/doc/vignettedtComb.R
 6e886189cb0df8d7087b8741e73542b9 *inst/doc/vignettedtComb.Rnw
-822bcdb7c5448b4f9043100b46f42046 *inst/doc/vignettedtComb.pdf
+2726d0c0d25642a8a13f204a5e5a5c01 *inst/doc/vignettedtComb.pdf
 7dbffdd9477fea05ef77ded83592ed5f *man/allMethods.Rd
 a4342261ea48290ad70eb3f8750a7059 *man/availableMethods.Rd
 bf63bd722ffd6ccf0c5538a2e7a7208d *man/dtComb.Rd
@@ -46,7 +46,6 @@ e31b9b6a4fff032fedbacbb1884a8781 *man/print_train.Rd
 a044ae282fbdda10e4f88fbcf376c526 *man/std.train.Rd
 893667e253e7767d34bf4a18ab19e466 *man/transform_math.Rd
 031482eb15265c2885cd4cdf976da76f *tests/testthat.R
-00805e7ff12d3a99f2d45d1ec5bb6db7 *tests/testthat/Rplots.pdf
 23d7f29169fdf42bff5341e51e6b2520 *tests/testthat/result_data/mayo.rda
 f2756b14d8f883518ebef75cecb6791d *tests/testthat/result_data/test_linComb.rda
 cc7d121dfb91d955d56e13dda05adc47 *tests/testthat/result_data/test_mathComb.rda
@@ -55,11 +54,11 @@ f8edc0dcb62c3a7586fef0bfe7c852ab *tests/testthat/result_data/test_nonlinComb.rda
 c4f7ec0f24b08bd57e962f51b5311447 *tests/testthat/result_data/test_std.test.rda
 b44401cb234475d064949d078415c061 *tests/testthat/result_data/test_std.train.rda
 c6dd5a2909808f3a901cf00cfd8dfff0 *tests/testthat/result_data/wdbc.data.txt
-1b2b7e25d675e8743c91ff6d714234cd *tests/testthat/test-linComb.R
+c9196bc472282acc5e1037d463f594ea *tests/testthat/test-linComb.R
 d86601b71114b361059be7b5990dac42 *tests/testthat/test-mathComb.R
-531bcde330ca32c6dcd70bf5ca231d15 *tests/testthat/test-mlComb.R
-1df8413bf5906006183bcbb5ca916b88 *tests/testthat/test-nonlinComb.R
-c584e5ef5d07a17367b40d9647922025 *tests/testthat/test-predComb.R
+243e7147fdcde85282bfe2bbfb56081b *tests/testthat/test-mlComb.R
+a6f6d92e334adef07ff3681e5f05db29 *tests/testthat/test-nonlinComb.R
+6abc2ec7cabeb77e9ea0f76a76db86ab *tests/testthat/test-predComb.R
 fad180f9527284cafbe0ea112b037a03 *tests/testthat/test-standardize.R
 e9ad92c8ad27596efef608ab9e405471 *vignettes/dtComb.bib
 6e886189cb0df8d7087b8741e73542b9 *vignettes/vignettedtComb.Rnw

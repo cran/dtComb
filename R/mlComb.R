@@ -358,6 +358,10 @@ mlComb <- function(markers = NULL,
         data = data,
         method = method,
         preProc = preProcess,
+        trControl = caret::trainControl(
+          method = resample,
+          classProbs = TRUE
+        ),
         ...
       )
     } else {
