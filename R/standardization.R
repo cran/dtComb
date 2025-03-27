@@ -49,10 +49,10 @@
 #'
 #' @examples
 #' # call data
-#' data(laparoscopy)
+#' data(laparotomy)
 #'
 #' # define the function parameters
-#' markers <- laparoscopy[, -1]
+#' markers <- laparotomy[, -1]
 #' markers2 <- std.train(markers, "deviance")
 #'
 #' @export

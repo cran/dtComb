@@ -2,7 +2,7 @@
 % Please edit documentation in R/linComb.R
 \name{linComb}
 \alias{linComb}
-\title{Combine two diagnostic tests with several linear combination methods.}
+\title{Linear Combination Methods for Diagnostic Test Scores}
 \usage{
 linComb(
   markers = NULL,
@@ -208,7 +208,7 @@ for the roc curve(0.95, default).}
 \item{cutoff.method}{a \code{character} string determines the cutoff method
 for the roc curve.}
 
-\item{show.result}{a \code{logical} string indicating whether the results
+\item{show.result}{a \code{logical} value indicating whether the results
 should be printed to the console.}
 
 \item{\dots}{further arguments. Currently has no effect on the results.}
@@ -224,11 +224,11 @@ methods and standardization options.
 }
 \examples{
 # call data
-data(laparoscopy)
+data(laparotomy)
 
 # define the function parameters
-markers <- laparoscopy[, -1]
-status <- factor(laparoscopy$group, levels = c("not_needed", "needed"))
+markers <- laparotomy[, -1]
+status <- factor(laparotomy$group, levels = c("not_needed", "needed"))
 event <- "needed"
 
 score1 <- linComb(

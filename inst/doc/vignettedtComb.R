@@ -6,20 +6,20 @@ opts_chunk$set(tidy = FALSE, dev = "pdf", message = FALSE, fig.align = "center",
 library(dtComb)
 
 ## ----eval = TRUE, echo=TRUE---------------------------------------------------
-data(laparoscopy)
-head(laparoscopy)
+data(laparotomy)
+head(laparotomy)
 
 ## -----------------------------------------------------------------------------
-# # train set from the laparoscopy
+# # train set from the laparotomy
 set.seed(2128)
-inTrain <- caret::createDataPartition(laparoscopy$group, p = 3 / 4, list = FALSE)
-trainData <- laparoscopy[inTrain, ]
+inTrain <- caret::createDataPartition(laparotomy$group, p = 3 / 4, list = FALSE)
+trainData <- laparotomy[inTrain, ]
 head(trainData)
 
 ## -----------------------------------------------------------------------------
-# # test set from the laparoscopy
+# # test set from the laparotomy
 set.seed(2128)
-testData <- laparoscopy[-inTrain, -1]
+testData <- laparotomy[-inTrain, -1]
 
 ## -----------------------------------------------------------------------------
 markers <- trainData[, -1]

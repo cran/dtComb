@@ -165,8 +165,8 @@
 #' Gozde Erturk Zararsiz, Selcuk Korkmaz, Gokmen Zararsiz
 #'
 #' @examples
-#' data("laparoscopy")
-#' data <- laparoscopy
+#' data("laparotomy")
+#' data <- laparotomy
 #'
 #' markers <- data[, -1]
 #' status <- factor(data$group, levels = c("not_needed", "needed"))

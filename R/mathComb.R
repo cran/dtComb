@@ -83,9 +83,9 @@
 #' where \eqn{x} is the value of a marker and \eqn{sd(x)} is the standard deviation of the marker.
 #' }
 #'
-#' @param transform a \code{character} string indicating the name of the
-#'  standardization method. The default option is no standardization applied.
-#'  Available options are:
+#' @param transform A \code{character} string specifying the mathematical
+#' transformation method.
+#' Available options: \code{"log"}, \code{"exp"}, \code{"sin"}, \code{"cos"}.
 #'  \itemize{
 #'  \item \code{log}: Applies logarithm transform to markers before calculating
 #'  combination score
@@ -112,22 +112,22 @@
 #' @param cutoff.method  a \code{character} string determines the cutoff method
 #'  for the roc curve.
 #'
-#' @param show.result a \code{logical} string indicating whether the results
+#' @param show.result A \code{logical} value indicating whether the results
 #' should be printed to the console.
 #'
 #' @param \dots further arguments. Currently has no effect on the results.
 #'
-#' @return A list of \code{numeric} mathematical combination scores calculated
-#'  according to the given method and standardization option
+#' @return A list containing the computed combination scores and, optionally,
+#'  diagnostic performance metrics.
 #'
 #' @author Serra Ilayda Yerlitas, Serra Bersan Gengec, Necla Kochan,
 #' Gozde Erturk Zararsiz, Selcuk Korkmaz, Gokmen Zararsiz
 #'
 #' @examples
 #'
-#' data(laparoscopy)
-#' markers <- laparoscopy[, -1]
-#' status <- factor(laparoscopy$group, levels = c("not_needed", "needed"))
+#' data(laparotomy)
+#' markers <- laparotomy[, -1]
+#' status <- factor(laparotomy$group, levels = c("not_needed", "needed"))
 #' event <- "needed"
 #' direction <- "<"
 #' cutoff.method <- "Youden"
@@ -548,28 +548,27 @@ mathComb <- function(markers = NULL,
 }
 
 
-#' @title Mathematical transformations for biomarkers.
+#' @title Mathematical transformations for biomarkers
 #'
-#' @description The \code{transform_math} function applies a user preference
-#' transformation from \code{log} \code{exp} \code{sin} \code{cos} transformations
-#' for biomarkers.
+#' @description Applies a selected mathematical transformation (\code{"log"}, \code{"exp"}, \code{"sin"}, or \code{"cos"}) to biomarker data.
 #'
-#' @param markers a \code{numeric} data frame that contains the biomarkers
+#' @param markers A \code{numeric} data frame that contains the biomarkers.
 #'
-#' @param transform a \code{numeric} string specifying the method used for transform
-#'  the markers. The available methods are: \code{log} \code{exp} \code{sin} \code{cos}.
+#' @param transform A character string specifying the transformation method to be applied.
+#' Supported methods are: \code{"log"}, \code{"exp"}, \code{"sin"}, \code{"cos"}.
 #'
-#' @return A \code{numeric} dataframe of standardized biomarkers
+#' @return A \code{numeric} data frame containing the transformed biomarkers.
 #'
 #' @author Serra Ilayda Yerlitas, Serra Bersan Gengec, Necla Kochan,
 #' Gozde Erturk Zararsiz, Selcuk Korkmaz, Gokmen Zararsiz
 #'
 #' @examples
-#' data(laparoscopy)
-#' markes <- laparoscopy[, -1]
-#' transform_math(markes, transform = "log")
+#' data(laparotomy)
+#' markers <- laparotomy[, -1]
+#' transform_math(markers, transform = "log")
 #'
 #' @export
+
 
 transform_math <- function(markers, transform) {
   if (any(transform == "none")) {
